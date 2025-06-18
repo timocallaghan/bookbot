@@ -5,8 +5,14 @@ def main():
     count = word_count(text)
     letters = letter_count(text)
     sorted_dict = dict_sort(letters)
-    print(f"{count} words found in the document")
-    print(sorted_dict)
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
+    print(f"Found {count} total words")
+    print("--------- Character Count -------")
+    for d in sorted_dict:
+        print(f"{d["char"]}: {d["num"]}")
+    print("============= END ===============")
 
 def get_book_text(book_path):
     with open(book_path) as f:
