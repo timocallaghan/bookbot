@@ -12,7 +12,7 @@ def letter_count(text):
             letters_dict[letter] = 1
     return letters_dict
 
-def sort_on(dict) :
+def sort_on(dict):
     return dict["num"]
 
 def dict_sort(dictionary):
